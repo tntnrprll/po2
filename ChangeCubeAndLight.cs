@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ChangeCubeAndLight : MonoBehaviour {
+public class ChangeCubeAndLight : MonoBehaviour
+{
 
     //PhotonView photonview;
 
@@ -46,18 +47,19 @@ public class ChangeCubeAndLight : MonoBehaviour {
     }*/
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         //photonview = PhotonView.Get(this);
 
 
 
         //photonviewPlayer = Player.GetComponent<PhotonView>();
 
-        
-        
+
+
 
         //photonviewPlayer = GameObject.Find("Capsule(Clone)").GetComponent<PhotonView>();
-        
+
 
         //photonviewPlayer = GetComponent<PhotonView>();
 
@@ -76,13 +78,14 @@ public class ChangeCubeAndLight : MonoBehaviour {
         photonviewCube.viewID = cubeID;
         photonviewLight.viewID = lightID;*/
 
-        
+
 
     }
-	
-	// Update is called once per frame
-	void Update () {
-	}
+
+    // Update is called once per frame
+    void Update()
+    {
+    }
 
     /*public void SelectOptionButtonClickRecive()
     {
@@ -140,11 +143,11 @@ public class ChangeCubeAndLight : MonoBehaviour {
 
     }*/
 
-    public void ChangeOption2(bool boxoption,bool lightoption)
+    public void ChangeOption2(bool boxoption, bool lightoption)
     {
         BoxOption.SetActive(boxoption);//Box의 색과 크기를 변경할수 있는 패널의 활성여부
         LightOption.SetActive(lightoption);//Light의 색과 세기, 범위를 변경할 수 있는 패널의 활성여부
-        
+
     }
 
 
